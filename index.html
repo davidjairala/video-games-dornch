@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Super duper video game!</title>
+
+    <style>
+      body {
+        background-color: black;
+      }
+
+      .canvas {
+        background-color: white;
+        width: 800px;
+        height: 600px;
+        border: 2px solid red;
+      }
+    </style>
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/tile.js"></script>
+    <script src="lib/camera.js"></script>
+    <script src="lib/game.js"></script>
+
+    <script>
+      $(function() {
+        var game = new Game("#canvas", 800, 600);
+        game.start();
+      });
+    </script>
+  </head>
+
+  <body>
+
+    <canvas id="canvas" class="canvas"></canvas>
+
+  </body>
+
+</html>
